@@ -131,13 +131,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     # parser.add_argument(
     #     '--gt_root', type=str, help='ground-truth root',
-    #     default='/root/DGNet-main/DGNet-main/dataset/TestDataset')
+    #     default='./dataset/TestDataset')
     parser.add_argument(
         '--gt_root', type=str, help='ground-truth root',
-        default='/root/dataset/micai')
-    
-    # '../dataset/TestDataset'
-    #/root/dataset/micai
+        default='./dataset/micai')
+
     parser.add_argument(
         '--pred_root', type=str, help='prediction root',
         default='./result')

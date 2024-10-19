@@ -212,14 +212,14 @@ if __name__ == '__main__':
                         choices=['DGNet', 'DGNet-S', 'DGNet-PVTv2-B0', 'DGNet-PVTv2-B1', 'DGNet-PVTv2-B2', 'DGNet-PVTv2-B3', 'DGNet-PVTv2-B4','convnextv2_base'])
     parser.add_argument('--load', type=str, default=None, help='train from checkpoints')
     
-    parser.add_argument('--train_root', type=str, default='/root/dataset/micai/TrainDataset/',
+    parser.add_argument('--train_root', type=str, default='./dataset/micai/TrainDataset/',
                         help='the training rgb images root')
-    # parser.add_argument('--train_root', type=str, default='/root/DGNet-main/DGNet-main/dataset/TrainDataset/',
+    # parser.add_argument('--train_root', type=str, default='./dataset/TrainDataset/',
     #                     help='the training rgb images root')
 
-    parser.add_argument('--val_root', type=str, default='/root/dataset/micai/micai_te/',
+    parser.add_argument('--val_root', type=str, default='./dataset/micai/micai_te/',
                         help='the test rgb images root')
-    # parser.add_argument('--val_root', type=str, default='/root/DGNet-main/DGNet-main/dataset/TestDataset/CAMO/',
+    # parser.add_argument('--val_root', type=str, default='./dataset/TestDataset/CAMO/',
     #                     help='the test rgb images root')
     
     parser.add_argument('--gpu_id', type=str, default='0',

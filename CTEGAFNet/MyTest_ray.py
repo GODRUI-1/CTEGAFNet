@@ -40,7 +40,7 @@ if __name__ == '__main__':
     parser.add_argument('--model', type=str, default='convnextv2_base', 
                         choices=['DGNet', 'DGNet-S', 'DGNet-PVTv2-B0', 'DGNet-PVTv2-B1', 'DGNet-PVTv2-B2', 'DGNet-PVTv2-B3', 'DGNet-PVTv2-B4','convnextv2_base','convnextv2_tiny','unireplknet_s'])
     parser.add_argument('--snap_path', type=str, default='./snapshot/CTEGAFNet_MICAI/Net_epoch_best.pth',
-                        help='train use gpu')
+                        help='train use gpu')	#模型保存的路径
     parser.add_argument('--gpu_id', type=str, default='0',
                         help='train use gpu')
     opt = parser.parse_args()
@@ -101,7 +101,7 @@ if __name__ == '__main__':
         os.makedirs(map_save_path, exist_ok=True)
         evaluator(
             model=model,
-            val_root='/root/dataset/micai/' + data_name + '/',
-            # val_root='/root/DGNet-main/DGNet-main/dataset/TestDataset/' + data_name + '/',
+            val_root='./dataset/micai/' + data_name + '/',
+            # val_root='./dataset/TestDataset/' + data_name + '/',
             map_save_path=map_save_path,
             trainsize=384)
