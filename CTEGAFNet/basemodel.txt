@@ -1,0 +1,1 @@
+下载好的convnextv2_base_22k_384_ema.pt 直接丢同一个目录下就行。
