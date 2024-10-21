@@ -1,3 +1,7 @@
+COD数据集链接(github)<br>
+CAMO: https://github.com/ondyari/FaceForensics<br>
+COD10K: https://github.com/DengPingFan/SINet<br>
+NC4K: https://github.com/JingZhang617/COD-Rank-Localize-and-Segment<br>
 百度网盘链接<br>
 最终得到的模型： <br>
 包含cod和micai两种：https://pan.baidu.com/s/1azobbbeoIWSvmSUOtQt-qQ?pwd=jde9 <br>
